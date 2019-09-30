@@ -16,7 +16,7 @@ endangered-species
 
 ## Project Description
 
-Web app where users can search for endangered species and learn about them. Post MVP will have ways to help out your the endangered species of your choice or fight a common threat.
+Web app where users can learn about endangered animals. Post MVP will have ways to search and help out  the endangered species of your choice or fight a common threat.
 
 ## Wireframes
 
@@ -99,7 +99,7 @@ https://wireframe.cc/0fQuPj
 | App | holds the app - will hold state | 
 | Header | will be the nav for the site (should always be there) | 
 | Footer | hold dev contact info and possibly the nav | 
-| Main | will hold animal list and random animal | 
+| Main | will hold animal list and random animal components | 
 | AnimalList | List of all animals | 
 | RandomAnimal | Show a random animal | 
 | AnimalContainer | component that will render the info for list and random | 
