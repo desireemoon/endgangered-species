@@ -2,12 +2,11 @@ import React, { Component } from 'react'
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
 import AnimalContainer from './AnimalContainer'
-import Header from './Header';
 
 class AnimalList extends Component {
     
     render() {
-        console.log("is animallist showing in AL comp:", this.props.animals);
+        console.log("is animal list showing in AL comp:", this.props.animals);
         
         return (
             <div>

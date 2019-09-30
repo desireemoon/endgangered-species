@@ -14,7 +14,8 @@ class App extends Component {
     super(props)
     this.state = ({
         animals: [],
-        animal: ''
+        animal: '',
+        randomAnimal: ''
     })
   }
 
@@ -33,16 +34,32 @@ class App extends Component {
         animals: animalList.data.allSpecies
     })
     console.log("did it go to state:", this.state.animals);
+  }
 
-}
+  getRandomNum = () => {
+    return Math.floor(Math.random() * (13));
+  }
+
+  getRandomAnimal = () => {
+  const randomAnimal = this.state.animals[this.getRandomNum()]
+  console.log(randomAnimal);
+  this.setState({ 
+    randomAnimal: randomAnimal 
+    })
+    // debugger;
+    // console.log("is it random:", this.props.animals[this.getRandomNum()]);
+    console.log("show random state pls:", this.state.randomAnimal);
+    
+  }
 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header handleClick={this.getRandomAnimal}/>
         <Main animals={this.state.animals} 
               animal={this.state.animal} 
-              handleClick={this.grabAnimal}/>
+              handleClick={this.grabAnimal}
+              randomAnimal={this.state.randomAnimal}/>
         <Footer />
         
       </div>

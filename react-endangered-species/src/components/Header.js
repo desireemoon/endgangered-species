@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
     return (
       <nav>
           <h1>Endangered Species List</h1>
@@ -10,7 +10,7 @@ const Header = () => {
               <button><Link className="link" to="/animalList">Animal List</Link></button>
             </div>
             <div className="link-button">
-              <button><Link className="link" to="/randomAnimal">Random Animal</Link></button>
+              <button><Link className="link" onClick={props.handleClick} to="/random">Random Animal</Link></button>
             </div>
           </div>
 
