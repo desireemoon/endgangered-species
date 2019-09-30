@@ -4,9 +4,19 @@ endangered-species
 # Project Overview
 
 
+## Project Schedule
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|Sep 30th| Project Approval - Pseudocode and start Structure | Incomplete
+|Oct 1st| Finish structure  and start Logic  | Incomplete
+|Oct 2nd| Finish logic and start CSS | Incomplete
+|Oct 3rd| CSS and any post MVP work | Incomplete
+|Oct 4th| Presentation Day - project finished  | Incomplete
+
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Web app where users can search for endangered species and learn about them. Post MVP will have ways to help out your the endangered species of your choice or fight a common threat.
 
 ## Wireframes
 
@@ -15,24 +25,50 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 ## API Snippet
 
 ```
-Paste a snippet from your API here that shows the shape of the data
+{
+  "common_name": "Semi-collared Hawk",
+  "scientific_name": "Accipiter collaris",
+  "vulnerability_status": "vulnerable",
+  "citation": "Campbell, J. 2007. Abronia oaxacae. The IUCN Red List of Threatened Species 2007: e.T63685A12697055. http://dx.doi.org/10.2305/IUCN.UK.2007.RLTS.T63685A12697055.en",
+  "conservation_measure": "Resource & habitat protection",
+  "video_url": "https://www.youtube.com/watch?v=vy2RKH2v5_E",
+  "imageLink": "http://faculty.ucr.edu/~chappell/INW/birds3raptors/semicollaredhawk019.jpg",
+  "webLink": "http://apiv3.iucnredlist.org/api/v3/website/Accipiter collaris",
+  "assoc_habitats": [
+    "Forest - Subtropical/Tropical Moist Montane"
+  ],
+  "assoc_threats": [
+    "Annual & perennial non-timber crops",
+    "Agro-industry farming",
+    "Livestock farming & ranching",
+    "Agro-industry grazing, ranching or farming",
+    "Work & other activities"
+  ],
+  "assoc_countries": [
+    "Colombia",
+    "Ecuador",
+    "Peru",
+    "Venezuela, Bolivarian Republic of"
+  ]
+}
 ```
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP EXAMPLE
+MVP:
 - Find and use external api 
 - Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+-Display a full list of endangered animals
+-Be able to search for a specific animal by name, threat, habitat, or country
+-Get a random animal section
 
-#### PostMVP EXAMPLE
+PMVP:
+-have a 'favorites' section
+-have a 'how you can help' section
 
-- Add user auth
 
 ## React Component Hierarchy
+
 
 Define the the React components and the architectural design of your app.
 
@@ -43,39 +79,48 @@ Add in a picture of your Priority Matrix
 ## Functional Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
-
 | Component | Description | 
 | --- | :---: |  
-| Header | This will render the header include the nav | 
-| Footer | This will render the footer include the nav | 
+| App | holds the app | 
+| Header | will be the nav for the site (should always be there) | 
+| Footer | hold dev contact info and possibly the nav | 
+| AnimalList | This will render the header include the nav | 
+| Search | This will render the footer include the nav | 
+| RandomAnimal | This will render the header include the nav | 
+| AnimalContainer | This will render the footer include the nav | 
+| NotFound | This will render the footer include the nav | 
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+## Time Frames
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
-
+| Project Design | H | 3hrs| :---: | :---: |
+| Pseudocode | H | 3hrs| :---: | :---: |
+| HTML structure | H | 6hrs| :---: | :---: |
+| Get API keys and grab data | H | 1hr| :---: | :---: |
+| implement api logic | M | 3hrs| :---: | :---: |
+| implement javascript functionality | M | 6hrs| :---: | :---: |
+| CSS styling | M | 10hrs| :---: | :---: |
+| Total | H | 32hrs| :---: | :---: |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+n/a 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+ <div className="list-container">
+                {this.state.articles.map((article) => (
+                    <Link
+                        key={article.source.id}
+                        onClick={() => {this.props.handleClick(article)}}
+                        to={`/topNews/${article.title}`}
+                    ><div className="article-links"><p>{article.title}</p><img className="link-img" src={article.urlToImage}></img></div></Link>))}
+            </div>
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+**ERROR**: Had issues choosing and idea that would work with an API 
+**RESOLUTION**: Made it api focused instead of idea focused
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
