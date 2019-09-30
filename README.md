@@ -20,7 +20,8 @@ Web app where users can search for endangered species and learn about them. Post
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+Mobile: https://wireframe.cc/UXR2uC
+Web: https://wireframe.cc/AwHxep
 
 ## API Snippet
 
@@ -70,11 +71,11 @@ PMVP:
 ## React Component Hierarchy
 
 
-Define the the React components and the architectural design of your app.
+https://wireframe.cc/HPthoc
 
 ## Priority Matrix
 
-Add in a picture of your Priority Matrix
+https://wireframe.cc/0fQuPj
 
 ## Functional Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
