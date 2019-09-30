@@ -72,13 +72,13 @@ Web: https://wireframe.cc/AwHxep
 MVP:
 - Find and use external api 
 - Render data on page 
--Display a full list of endangered animals
--Get a random animal section
+- Display a full list of endangered animals
+- Get a random animal section
 
 PMVP:
--have a 'favorites' section
--have a 'how you can help' section
--Be able to search for a specific animal by name, threat, habitat, or country
+- Have a 'favorites' section
+- Have a 'how you can help' section
+- Be able to search for a specific animal by name, threat, habitat, or country
 
 
 
