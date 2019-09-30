@@ -26,32 +26,45 @@ Web: https://wireframe.cc/AwHxep
 ## API Snippet
 
 ```
-{
-  "common_name": "Semi-collared Hawk",
-  "scientific_name": "Accipiter collaris",
-  "vulnerability_status": "vulnerable",
-  "citation": "Campbell, J. 2007. Abronia oaxacae. The IUCN Red List of Threatened Species 2007: e.T63685A12697055. http://dx.doi.org/10.2305/IUCN.UK.2007.RLTS.T63685A12697055.en",
-  "conservation_measure": "Resource & habitat protection",
-  "video_url": "https://www.youtube.com/watch?v=vy2RKH2v5_E",
-  "imageLink": "http://faculty.ucr.edu/~chappell/INW/birds3raptors/semicollaredhawk019.jpg",
-  "webLink": "http://apiv3.iucnredlist.org/api/v3/website/Accipiter collaris",
-  "assoc_habitats": [
-    "Forest - Subtropical/Tropical Moist Montane"
-  ],
-  "assoc_threats": [
-    "Annual & perennial non-timber crops",
-    "Agro-industry farming",
-    "Livestock farming & ranching",
-    "Agro-industry grazing, ranching or farming",
-    "Work & other activities"
-  ],
-  "assoc_countries": [
-    "Colombia",
-    "Ecuador",
-    "Peru",
-    "Venezuela, Bolivarian Republic of"
-  ]
-}
+ "success": "true",
+    "message": "list of species retrieved successfully",
+    "allSpecies": [
+        {
+            "image": {
+                "url": "/images/bengal-tiger_image.png",
+                "licence": ""
+            },
+            "_id": "5d21dc7061161106c4023008",
+            "name": "Bengal Tiger",
+            "description": "The Bengal tiger lives in the Indian subcontinent. It is one of the biggest wild cats alive and is the national animal of India and Bangladesh. This species is at the top of the food chain in the wild and plays a vital link in maintaining the rich diversity of nature. It is listed as endangered species since 2008 and there are only about 2,500 individuals left. Most live in India, but there are a few hundered also in Bangladesh, Nepal and Bhutan. The species is threatened by poaching and loss of habitat caused by climat change. ",
+            "status": "Endangered",
+            "population": "2,500",
+            "scientific_name": "Panthera tigris tigris",
+            "location": "Southeast Asia",
+            "habitat": "Tropical rainforests, marshes, and tall grasses",
+            "status_legend": [
+                {
+                    "_id": "5d21dc7161161106c402300b",
+                    "status": "Critically endangered",
+                    "abbreviation": "CR",
+                    "description": "Faces an extremely high risk of extinction in the immediate future."
+                },
+                {
+                    "_id": "5d21dc7161161106c402300a",
+                    "status": "Endangered",
+                    "abbreviation": "EN",
+                    "description": "Faces a high risk of extinction in the near future."
+                },
+                {
+                    "_id": "5d21dc7161161106c4023009",
+                    "status": "Vulnerable",
+                    "abbreviation": "VU",
+                    "description": "Faces a high risk of endangerment in the medium term."
+                }
+            ],
+            "url": "bengal-tiger",
+            "__v": 0
+        },
 ```
 
 ### MVP/PostMVP - 5min
@@ -60,12 +73,13 @@ MVP:
 - Find and use external api 
 - Render data on page 
 -Display a full list of endangered animals
--Be able to search for a specific animal by name, threat, habitat, or country
 -Get a random animal section
 
 PMVP:
 -have a 'favorites' section
 -have a 'how you can help' section
+-Be able to search for a specific animal by name, threat, habitat, or country
+
 
 
 ## React Component Hierarchy
@@ -82,14 +96,14 @@ https://wireframe.cc/0fQuPj
 
 | Component | Description | 
 | --- | :---: |  
-| App | holds the app | 
+| App | holds the app - will hold state | 
 | Header | will be the nav for the site (should always be there) | 
 | Footer | hold dev contact info and possibly the nav | 
-| AnimalList | This will render the header include the nav | 
-| Search | This will render the footer include the nav | 
-| RandomAnimal | This will render the header include the nav | 
-| AnimalContainer | This will render the footer include the nav | 
-| NotFound | This will render the footer include the nav | 
+| Main | will hold animal list and random animal | 
+| AnimalList | List of all animals | 
+| RandomAnimal | Show a random animal | 
+| AnimalContainer | component that will render the info for list and random | 
+| NotFound | redirect if user doesn't go to the right page  | 
 
 
 ## Time Frames
@@ -99,14 +113,15 @@ https://wireframe.cc/0fQuPj
 | Project Design | H | 3hrs| :---: | :---: |
 | Pseudocode | H | 3hrs| :---: | :---: |
 | HTML structure | H | 6hrs| :---: | :---: |
-| Get API keys and grab data | H | 1hr| :---: | :---: |
+| Get API keys and grab data | H | 3hr| :---: | :---: |
 | implement api logic | M | 3hrs| :---: | :---: |
 | implement javascript functionality | M | 6hrs| :---: | :---: |
 | CSS styling | M | 10hrs| :---: | :---: |
-| Total | H | 32hrs| :---: | :---: |
+| Total | H | 34hrs| :---: | :---: |
 
 ## Additional Libraries
-n/a 
+- react-router
+- react-router-dom
 
 ## Code Snippet
 
