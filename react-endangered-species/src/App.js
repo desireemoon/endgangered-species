@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import Axios from 'axios';
+import { Link } from 'react-router-dom'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = ({
+        animals: [],
+        animal: ''
+    })
+  }
+
+  grabArticleDeets= (animal) => {
+    this.setState({
+      animal: animal
+    })
+    console.log("check for animal", animal);
+    
+  }
+
+  async componentDidMount() {
+    const animalList = await Axios("http://www.bloowatch.org/developers/json/species/")
+    console.log("animal list:", animalList.data.allSpecies);
+    this.setState({
+        animals: animalList.data.allSpecies
+    })
+    console.log("did it go to state:", this.state.animals);
+
 }
 
-export default App;
+  render() {
+    return (
+      <div className="App">
+        
+      </div>
+    );
+  }
+}
+
+export default () => (
+  <Router>
+    <App />
+  </Router>
+)

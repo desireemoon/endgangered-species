@@ -8,7 +8,7 @@ endangered-species
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sep 30th| Project Approval - Pseudocode and start Structure | Incomplete
+|Sep 30th| Project Approval - Pseudocode and start Structure | Complete
 |Oct 1st| Finish structure  and start Logic  | Incomplete
 |Oct 2nd| Finish logic and start CSS | Incomplete
 |Oct 3rd| CSS and any post MVP work | Incomplete
@@ -110,10 +110,10 @@ https://wireframe.cc/0fQuPj
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Design | H | 3hrs| :---: | :---: |
+| Project Design | H | 3hrs| 1.5hrs | :---: |
 | Pseudocode | H | 3hrs| :---: | :---: |
 | HTML structure | H | 6hrs| :---: | :---: |
-| Get API keys and grab data | H | 3hr| :---: | :---: |
+| Get API keys and grab data | H | 3hr| 5hrs | :---: |
 | implement api logic | M | 3hrs| :---: | :---: |
 | implement javascript functionality | M | 6hrs| :---: | :---: |
 | CSS styling | M | 10hrs| :---: | :---: |
