@@ -1,24 +1,47 @@
-import NotFound from './components/NotFound'
+import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import NotFound from './NotFound'
+import Header from './Header'
+import AnimalList from './AnimalList'
+import RandomAnimal from './RandomAnimal'
+import AnimalContainer from './AnimalContainer'
 
-
-<Switch>
-            <Route exact path="/" component={Header}/>  
+class Main extends Component {
+  constructor (props) {
+    super(props)
+    this.state = ({
+        animal: ''
+    })
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        <main>
+          <Switch>
             <Route 
-              exact path="/topNews" 
-              render={() => <TopNews handleClick={this.grabArticleDeets}/>} 
+              exact path="/animalList" 
+              render={() => <AnimalList animals={this.props.animals} handleClick={this.props.handleClick}/>} 
             />
             <Route 
-              exact path="/topNews/:details" 
-              render={() => <ArticleContainer article={this.state.article}/>}
+              exact path="/animalList/:details" 
+              render={() => <AnimalContainer animal={this.props.animal}/>}
             />
             <Route 
-              exact path="/oasisNews" 
-              render={() => <OasisNews handleClick={this.grabArticleDeets}/>}
+              exact path="/randomAnimal" 
+              render={() => <RandomAnimal animals={this.props.animals} handleClick={this.props.handleClick}/>}
             />
             <Route 
-              exact path="/oasisNews/:details" 
-              render={() => <ArticleContainer article={this.state.article}/>}
+              exact path="/randomAnimal/:details" 
+              render={() => <AnimalContainer animal={this.props.animal}/>}
             />
             <Route component={NotFound} />
 
           </Switch>
+        </main>
+      </div>
+    );
+  }
+}
+
+export default Main

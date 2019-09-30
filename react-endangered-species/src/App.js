@@ -5,6 +5,7 @@ import Axios from 'axios';
 import { Link } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Main from './components/Main'
 
 
 
@@ -17,7 +18,7 @@ class App extends Component {
     })
   }
 
-  grabArticleDeets= (animal) => {
+  grabAnimal = (animal) => {
     this.setState({
       animal: animal
     })
@@ -25,7 +26,7 @@ class App extends Component {
     
   }
 
-  async componentDidMount() {
+   componentDidMount = async() => {
     const animalList = await Axios("http://www.bloowatch.org/developers/json/species/")
     console.log("animal list:", animalList.data.allSpecies);
     this.setState({
@@ -38,6 +39,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
+        <Main animals={this.state.animals} 
+              animal={this.state.animal} 
+              handleClick={this.grabAnimal}/>
+        <Footer />
         
       </div>
     );
