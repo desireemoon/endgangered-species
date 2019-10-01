@@ -52,12 +52,11 @@ nav {
 }
 
 .link-container {
-  margin: 10px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   transition-duration: 0.5s;
-  
+  height: 155px;
   
 }
 
@@ -85,9 +84,13 @@ nav {
   color: black;
 }
 
+.link-decor {
+  margin: 10px;
+  padding: 10px;
+}
 
 .link-img {
-  max-width: 100px;
+  max-width: 120px;
   max-height: 100px;
 }
 
