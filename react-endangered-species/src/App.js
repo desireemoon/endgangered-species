@@ -60,15 +60,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header handleRandomClick={this.getRandomAnimal}/>
-        <Main animals={this.state.animals} 
-              animal={this.state.animal} 
-              handleClick={this.grabAnimal}
-              randomAnimal={this.state.randomAnimal}
-              handleRandomClick={this.getRandomAnimal}
-              />
-        <Footer />
-        
+        <div className="header-container">
+          <Header handleRandomClick={this.getRandomAnimal}/>
+        </div>  
+        <div className="main-container">           
+          <Main animals={this.state.animals} 
+                animal={this.state.animal} 
+                handleClick={this.grabAnimal}
+                randomAnimal={this.state.randomAnimal}
+                handleRandomClick={this.getRandomAnimal}
+            />
+        </div> 
+        <div className="footer-container">
+           <Footer />
+        </div>
       </div>
     );
   }

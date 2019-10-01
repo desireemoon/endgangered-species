@@ -115,13 +115,16 @@ https://wireframe.cc/0fQuPj
 | HTML structure | H | 6hrs| 5hrs | :---: |
 | Get API keys and grab data | H | 3hr| 5hrs | :---: |
 | implement api logic | M | 3hrs| 3hrs | :---: |
-| implement javascript functionality | M | 6hrs| :---: | :---: |
-| CSS styling | M | 10hrs| 1hr | :---: |
+| implement jsx functionality | M | 6hrs| 3hrs | :---: |
+| CSS styling | M | 10hrs| 3hr | :---: |
 | Total | H | 34hrs| :---: | :---: |
 
 ## Additional Libraries
 - react-router
 - react-router-dom
+- @fortawesome/fontawesome-svg-core
+- @fortawesome/free-brands-svg-icons
+- @fortawesome/free-solid-svg-icons
 
 ## Code Snippet
 
