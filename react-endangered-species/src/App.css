@@ -5,9 +5,7 @@
   margin: 0 auto;
 }
 
-
 /* Global CSS */
-
 h1 {
   font-size: 35px;
   font-family: 'Archivo Black', sans-serif;
@@ -17,14 +15,15 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+/* makes header sticky */
 .header-container {
   position:-webkit-sticky;
   position: sticky;
   top: 0;
   background: white;
 }
-/* CSS for the Header compnent */
 
+/*Header compnent */
 .header {
   margin: 20px 0;
 }
@@ -42,11 +41,16 @@ nav {
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-
 }
 
+/* Footer component */
 
-/* CSS for AnimalList.js */
+.social-links {
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+/* AnimalList.js */
 
 .list-container {
   margin: 20px;
@@ -62,9 +66,9 @@ nav {
   justify-content: flex-end;
   transition-duration: 0.5s;
   height: 155px;
-  
 }
 
+/* allow for hover at web size */
 @media only screen and (min-width: 600px) {
   .link-container:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -72,21 +76,10 @@ nav {
   }
 }
 
-
 .animal-links {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   
-}
-
-/* :link and :visited stops link from changing color and being underlined */
-.link-decor:link {
-  text-decoration: none;
-  color: black;
-}
-.link-decor:visited {
-  text-decoration: none;
-  color: black;
 }
 
 .link-decor {
@@ -99,3 +92,29 @@ nav {
   max-height: 100px;
 }
 
+/* :link and :visited stops link from changing color and being underlined */
+.link-decor:link {
+  text-decoration: none;
+  color: black;
+}
+.link-decor:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Status component */
+
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+
+}
+
+.status-boxes {
+  background: lightblue;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 300px;
+  margin: 10px;
+}

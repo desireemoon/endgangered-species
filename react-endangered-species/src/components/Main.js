@@ -29,11 +29,11 @@ class Main extends Component {
                         />
                         <Route
                             exact path="/animals/:details"
-                            render={() => <AnimalContainer animal={this.props.animal} />}
+                            render={() => <AnimalContainer animals={this.props.animals} animal={this.props.animal} />}
                         />
                         <Route
                             exact path="/random"
-                            render={() => <AnimalContainer animal={this.props.randomAnimal} />}
+                            render={() => <AnimalContainer animals={this.props.animals} animal={this.props.randomAnimal} />}
                         />
                         <Route
                             exact path="/status"
