@@ -6,7 +6,12 @@ import { Link } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Main from './components/Main'
+import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
+library.add(fab, faCheckSquare, faCoffee, faEnvelopeSquare)
 
 
 class App extends Component {
