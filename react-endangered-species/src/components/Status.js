@@ -1,7 +1,4 @@
-import React, { Component } from 'react'
-import Axios from 'axios';
-import { Link } from 'react-router-dom'
-import AnimalContainer from './AnimalContainer'
+import React from 'react'
 
 
 const Status = (props) => {

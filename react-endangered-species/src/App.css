@@ -1,22 +1,93 @@
+/* post MVP add hamburger to have drop down menu for mobile */
+/* refer to the gucci mobile, is it possible */
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
+
+/* Global CSS */
+
+h1 {
+  font-size: 35px;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* CSS for the Header compnent */
+
+.header {
+  margin: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link-button {
+  border: 2px solid black;
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 30px;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+
+}
+
+
+/* CSS for AnimalList.js */
+
+.list-container {
+  margin: 20px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+.link-container {
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition-duration: 0.5s;
+  
+  
 }
 
-.App-link {
-  color: #09d3ac;
+@media only screen and (min-width: 600px) {
+  .link-container:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+  }
 }
+
+
+.animal-links {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  
+}
+
+/* :link and :visited stops link from changing color and being underlined */
+.link-decor:link {
+  text-decoration: none;
+  color: black;
+}
+.link-decor:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+.link-img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
