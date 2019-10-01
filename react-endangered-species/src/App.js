@@ -29,7 +29,7 @@ class App extends Component {
 
    componentDidMount = async() => {
     const animalList = await Axios("http://www.bloowatch.org/developers/json/species/")
-    console.log("animal list:", animalList.data.allSpecies);
+    console.log("animal list:", animalList);
     this.setState({
         animals: animalList.data.allSpecies
     })
@@ -55,11 +55,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header handleClick={this.getRandomAnimal}/>
+        <Header handleRandomClick={this.getRandomAnimal}/>
         <Main animals={this.state.animals} 
               animal={this.state.animal} 
               handleClick={this.grabAnimal}
-              randomAnimal={this.state.randomAnimal}/>
+              randomAnimal={this.state.randomAnimal}
+              handleRandomClick={this.getRandomAnimal}
+              />
         <Footer />
         
       </div>

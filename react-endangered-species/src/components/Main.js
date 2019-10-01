@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import NotFound from './NotFound'
 import Header from './Header'
 import AnimalList from './AnimalList'
-import RandomAnimal from './RandomAnimal'
+import Status from './Status'
 import AnimalContainer from './AnimalContainer'
+import Home from './Home'
 
 class Main extends Component {
     constructor(props) {
@@ -22,18 +23,22 @@ class Main extends Component {
             <div className="App">
                 <main>
                     <Switch>
-                        <Route exact path="/" render={() => <Header />} />
+                          <Route exact path="/" render={() => <Home />} />
                         <Route
-                            exact path="/animalList"
+                            exact path="/animals"
                             render={() => <AnimalList animals={this.props.animals} handleClick={this.props.handleClick} />}
                         />
                         <Route
-                            exact path="/animalList/:details"
+                            exact path="/animals/:details"
                             render={() => <AnimalContainer animal={this.props.animal} />}
                         />
                         <Route
                             exact path="/random"
                             render={() => <AnimalContainer animal={this.props.randomAnimal} />}
+                        />
+                        <Route
+                            exact path="/status"
+                            render={() => <Status animals={this.props.animals} />}
                         />
                         <Route component={NotFound} />
                     </Switch>

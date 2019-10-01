@@ -15,7 +15,7 @@ class AnimalList extends Component {
                     <Link
                         key={index}
                         onClick={() => this.props.handleClick(animal)}
-                        to={`/animalList/${animal.name}`}
+                        to={`/animals/${animal.name}`}
                     ><div className="animal-links"><p>{animal.name}</p></div></Link>))}
             </div>
             </div>
