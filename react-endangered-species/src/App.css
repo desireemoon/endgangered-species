@@ -126,6 +126,7 @@ nav {
   align-items: center;
   transition-duration: 0.5s;
   height: 155px;
+  padding: 10px;
 }
 
 /* allow for hover for animal boxes at web size */
@@ -134,6 +135,7 @@ nav {
     transform: scale(1.2);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     border-radius: 20px;
+    background: rgba(80, 114, 36, 1);
   }
 }
 
