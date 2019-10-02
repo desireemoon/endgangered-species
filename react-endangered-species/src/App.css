@@ -6,11 +6,14 @@
 
 main{
   background: rgba(242, 216, 188, 1);
-  
+  padding: 15px;
 }
+
 
 .App {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Global CSS */
@@ -64,8 +67,16 @@ nav {
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  background: rgba(35, 65, 31, 1);
+  color: rgba(242, 216, 188, 1);
 }
 
+@media only screen and (min-width: 600px) {
+  .link-button:hover {
+    background: rgba(80, 114, 36, 1);
+    transform: scale(1.2);
+  }
+}
 /* Footer component */
 
 .footer {
