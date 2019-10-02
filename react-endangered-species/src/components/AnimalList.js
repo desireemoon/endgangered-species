@@ -14,7 +14,10 @@ class AnimalList extends Component {
                 {this.props.animals.map((animal, index) => (
                     <Link
                         key={index}
-                        onClick={() => this.props.handleClick(animal)}
+                        onClick={() => {
+                            this.props.handleClick(animal)
+                            window.scrollTo(0,0)
+                        }}
                         to={`/animals/${animal.name}`}
                         className="link-decor"
                     >

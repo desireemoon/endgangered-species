@@ -9,7 +9,7 @@ const ArticleContainer = (props) => {
             <div className="">
                 <h2>{props.animal && props.animal.name}</h2>
                 <div className="img-container" >
-                    <img src={`http://www.bloowatch.org/${props.animal && props.animal.image.url}`} alt={props.animal && props.animal.name} />
+                    <img className="animal-img"src={`http://www.bloowatch.org/${props.animal && props.animal.image.url}`} alt={props.animal && props.animal.name} />
                 </div>
                 <h3>Scientific Name: {props.animal && props.animal.scientific_name}</h3>
                 <p>Description: {props.animal && props.animal.description}</p>
