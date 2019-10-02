@@ -45,7 +45,7 @@ class App extends Component {
   }
 
   getRandomNum = () => {
-    return Math.floor(Math.random() * (13));
+    return Math.floor(Math.random() * (12));
   }
 
   getRandomAnimal = () => {

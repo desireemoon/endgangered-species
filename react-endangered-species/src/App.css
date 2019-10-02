@@ -1,18 +1,22 @@
 /* post MVP add hamburger to have drop down menu for mobile */
 /* refer to the gucci mobile, is it possible */
 /* LEARN SASS ! */
+/* check out enlarge for desktop animals */
 .App {
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* Global CSS */
 h1 {
   font-size: 35px;
   font-family: 'Archivo Black', sans-serif;
+  text-align: center;
 }
 
 h2, h3 {
   font-family: 'Archivo Black', sans-serif;
+  text-align: center;
 }
 
 
@@ -62,17 +66,36 @@ nav {
   color: black
 }
 
-/* allow for hover at web size  */
+/* allow for hover for social icons at web size  */
 @media only screen and (min-width: 600px) {
   .font-icon:hover {
-    color: grey
+    color: grey;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg) scale(1.2);
+    }
+    25% {
+      transform: rotate(90deg) scale(0.8);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    75% {
+      transform: rotate(270deg) scale(0.8);
+    }
+    100% {
+      transform: rotate(360deg) scale(1.2);
+    }
   }
 }
 
 /* AnimalList.js */
 
 .list-container {
-  margin: 20px;
+  margin: 5px;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
@@ -83,13 +106,15 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   transition-duration: 0.5s;
   height: 155px;
 }
 
-/* allow for hover at web size */
+/* allow for hover for animal boxes at web size */
 @media only screen and (min-width: 600px) {
   .link-container:hover {
+    transform: scale(1.2);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     border-radius: 20px;
   }
@@ -102,8 +127,8 @@ nav {
 }
 
 .link-decor {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .link-img {
@@ -142,4 +167,5 @@ nav {
 
 .animal-img {
   max-width: 350px;
+  
 }
