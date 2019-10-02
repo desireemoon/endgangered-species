@@ -37,7 +37,7 @@ class Main extends Component {
                         />
                         <Route
                             exact path="/status"
-                            render={() => <Status animals={this.props.animals} />}
+                            render={() => <Status animal={this.props.randomAnimal} />}
                         />
                         <Route component={NotFound} />
                     </Switch>

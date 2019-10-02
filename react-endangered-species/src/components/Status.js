@@ -10,16 +10,16 @@ const Status = (props) => {
           <p
           > Each animal list will either have the status of vulnerable, endangered, and critically endangered. Below are explanations of each status:</p>
          <div className="status-boxes">
-            <h3>{props.animals && props.animals[0].status_legend[0].status}</h3>
-            <p>{props.animals && props.animals[0].status_legend[0].description}</p>
+            <h3>{props.animal && props.animal.status_legend[0].status}</h3>
+            <p>{props.animal && props.animal.status_legend[0].description}</p>
         </div> 
         <div className="status-boxes">
-            <h3>{props.animals && props.animals[0].status_legend[1].status}</h3>
-            <p>{props.animals && props.animals[0].status_legend[1].description}</p>
+            <h3>{props.animal && props.animal.status_legend[1].status}</h3>
+            <p>{props.animal && props.animal.status_legend[1].description}</p>
             </div> 
         <div className="status-boxes">
-            <h3>{props.animals && props.animals[0].status_legend[2].status}</h3>
-            <p>{props.animals && props.animals[0].status_legend[2].description}</p>
+            <h3>{props.animal && props.animal.status_legend[2].status}</h3>
+            <p>{props.animal && props.animal.status_legend[2].description}</p>
         </div>
       </div>
     );

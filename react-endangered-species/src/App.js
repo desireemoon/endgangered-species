@@ -20,17 +20,16 @@ class App extends Component {
     this.state = ({
         animals: [],
         animal: '',
-        randomAnimal: ''
+        randomAnimal: '',
         
     })
   }
 
   grabAnimal = (animal) => {
     this.setState({
-      animal: animal
-      
+      animal: animal,
     })
-    console.log("check for animal", animal);
+    console.log("check for animal status", animal.status_legend);
     
   }
 
@@ -52,10 +51,9 @@ class App extends Component {
   getRandomAnimal = () => {
   const randomAnimal = this.state.animals[this.getRandomNum()]
   this.setState({ 
-    randomAnimal: randomAnimal 
-    })
-    // debugger;
-    // console.log("is it random:", this.props.animals[this.getRandomNum()]);
+    randomAnimal: randomAnimal
+  })
+    
     console.log("show random state pls:", this.state.randomAnimal);
     
   }
@@ -72,6 +70,7 @@ class App extends Component {
                 handleClick={this.grabAnimal}
                 randomAnimal={this.state.randomAnimal}
                 handleRandomClick={this.getRandomAnimal}
+                
             />
         </div> 
         <div className="footer-container">
