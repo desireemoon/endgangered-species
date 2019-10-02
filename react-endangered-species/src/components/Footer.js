@@ -8,9 +8,9 @@ const Footer = () => {
                 <h2>Connect with the programmer:</h2>
             </div>
             <div class="social-links">
-                <div class="social"><a href="https://www.linkedin.com/in/desiree-dewysocki"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" /></a></div>
-                <div class="social"><a href="https://github.com/desireemoon"><FontAwesomeIcon icon={['fab', 'github']} size="3x"  /></a></div>
-                <div class="social"><a href="mailto:desiree.dewysocki@gmail.com"><FontAwesomeIcon icon="envelope-square" size="3x"  /></a></div>
+                <div class="social"><a href="https://www.linkedin.com/in/desiree-dewysocki"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" className="font-icon"/></a></div>
+                <div class="social"><a href="https://github.com/desireemoon"><FontAwesomeIcon icon={['fab', 'github']} size="3x" className="font-icon"  /></a></div>
+                <div class="social"><a href="mailto:desiree.dewysocki@gmail.com"><FontAwesomeIcon icon="envelope-square" size="3x" className="font-icon"  /></a></div>
             </div>
         </div>
     );

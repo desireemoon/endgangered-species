@@ -21,12 +21,14 @@ class App extends Component {
         animals: [],
         animal: '',
         randomAnimal: ''
+        
     })
   }
 
   grabAnimal = (animal) => {
     this.setState({
       animal: animal
+      
     })
     console.log("check for animal", animal);
     
@@ -38,7 +40,9 @@ class App extends Component {
     this.setState({
         animals: animalList.data.allSpecies
     })
+ 
     console.log("did it go to state:", this.state.animals);
+    this.getRandomAnimal()
   }
 
   getRandomNum = () => {
@@ -47,7 +51,6 @@ class App extends Component {
 
   getRandomAnimal = () => {
   const randomAnimal = this.state.animals[this.getRandomNum()]
-  console.log(randomAnimal);
   this.setState({ 
     randomAnimal: randomAnimal 
     })

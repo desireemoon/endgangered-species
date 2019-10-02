@@ -1,7 +1,6 @@
 /* post MVP add hamburger to have drop down menu for mobile */
 /* refer to the gucci mobile, is it possible */
 .App {
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -23,6 +22,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 17px;
+  line-height: 20px;
 }
 
 /* makes header sticky */
@@ -58,6 +58,17 @@ nav {
 .social-links {
   display: flex;
   justify-content: space-evenly; 
+}
+
+.font-icon {
+  color: black
+}
+
+/* allow for hover at web size  */
+@media only screen and (min-width: 600px) {
+  .font-icon:hover {
+    color: grey
+  }
 }
 
 /* AnimalList.js */
