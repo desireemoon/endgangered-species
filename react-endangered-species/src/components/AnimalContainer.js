@@ -14,11 +14,11 @@ const ArticleContainer = (props) => {
                 <h3>Scientific Name: {props.animal && props.animal.scientific_name}</h3>
                 <p>Description: {props.animal && props.animal.description}</p>
                 <h3>Where does the {props.animal && props.animal.name} live?</h3>
-                <p>{props.animal && props.animal.location}</p>
-                <p>{props.animal && props.animal.habitat}</p>
+                <p>Location: {props.animal && props.animal.location}</p>
+                <p>Habitat: {props.animal && props.animal.habitat}</p>
                 <h3>What's the {props.animal && props.animal.name}'s endangered status?</h3>
-                <p>{props.animal && props.animal.status}</p>
-                <p>There are only around{props.animal && props.animal.population} left in the wild.</p>
+                <p>Status: {props.animal && props.animal.status}</p>
+                <p>There are only around {props.animal && props.animal.population} left in the wild.</p>
             </div>
             <div className="status-container">
                 <h2>What Does The Status Really Mean?</h2>

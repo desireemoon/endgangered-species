@@ -2,9 +2,15 @@
 /* refer to the gucci mobile, is it possible */
 /* LEARN SASS ! */
 /* check out enlarge for desktop animals */
+
+
+main{
+  background: rgba(242, 216, 188, 1);
+  
+}
+
 .App {
   margin: 0 auto;
-  padding: 10px;
 }
 
 /* Global CSS */
@@ -17,6 +23,7 @@ h1 {
 h2, h3 {
   font-family: 'Archivo Black', sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 
@@ -24,12 +31,13 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 21px;
+  letter-spacing: .4px;
 }
 
 /* makes header sticky */
 .header-container {
-  position:-webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: white;
@@ -37,12 +45,15 @@ p {
 
 /*Header compnent */
 .header {
-  margin: 20px 0;
+  padding: 10px 0;
+  background: rgba(128, 142, 86, 1);
+
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 .link-button {
@@ -57,19 +68,25 @@ nav {
 
 /* Footer component */
 
+.footer {
+  background: rgba(191, 175, 124, 1);
+  padding: 10px 0;
+}
+
 .social-links {
   display: flex;
   justify-content: space-evenly; 
+  padding: 10px 0;
 }
 
 .font-icon {
-  color: black
+  color: rgba(35, 65, 31, 1);
 }
 
 /* allow for hover for social icons at web size  */
 @media only screen and (min-width: 600px) {
   .font-icon:hover {
-    color: grey;
+    color: rgba(80, 114, 36, 1);
     animation: spin 2s linear infinite;
   }
 
@@ -95,7 +112,7 @@ nav {
 /* AnimalList.js */
 
 .list-container {
-  margin: 5px;
+  padding: 5px;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
@@ -151,8 +168,7 @@ nav {
 .status-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly
-
+  justify-content: space-evenly;
 }
 
 .status-boxes {
@@ -160,12 +176,19 @@ nav {
   border-radius: 12px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   width: 300px;
-  margin: 10px;
+  margin: 5px;
+  padding: 0 10px;
 }
 
 /* animal container */
 
 .animal-img {
-  max-width: 350px;
-  
+  max-width: 340px;
 }
+
+/* Color Theme Swatches in RGBA */
+.google-earth-view-2052-1-rgba { color: rgba(35, 65, 31, 1); }
+.google-earth-view-2052-2-rgba { color: rgba(80, 114, 36, 1); }
+.google-earth-view-2052-3-rgba { color: rgba(128, 142, 86, 1); }
+.google-earth-view-2052-4-rgba { color: rgba(191, 175, 124, 1); }
+.google-earth-view-2052-5-rgba { color: rgba(242, 216, 188, 1); }
