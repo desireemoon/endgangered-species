@@ -169,6 +169,12 @@ nav {
   max-height: 100px;
 }
 
+@media only screen and (min-width: 600px) {
+  .link-img {
+    max-width: 100vw;
+  }
+}
+
 /* :link and :visited stops link from changing color and being underlined */
 .link-decor:link {
   text-decoration: none;
@@ -185,6 +191,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.status-p {
+  font-size: 20px;
+  padding: 20px 0;
 }
 
 .status-boxes {

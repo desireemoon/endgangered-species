@@ -7,7 +7,7 @@ const Status = (props) => {
     return (
       <div className="status-section">
           <h2>What Does The Status Really Mean?</h2>
-          <p> Each animal list will either have the status of vulnerable, endangered, and critically endangered. Below are explanations of each status:</p>
+          <p className="status-p"> Each animal list will either have the status of vulnerable, endangered, and critically endangered. Below are explanations of each status:</p>
         <div className="status-container">
             <div className="status-boxes">
                 <h3>{props.animal && props.animal.status_legend[0].status}</h3>
