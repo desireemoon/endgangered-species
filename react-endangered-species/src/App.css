@@ -193,6 +193,9 @@ nav {
 }
 
 /* Status component */
+.status-section {
+  padding: 20px 0;
+}
 
 .status-container {
   display: flex;
@@ -212,6 +215,17 @@ nav {
   width: 300px;
   margin:  10px 5px;
   padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .status-h2{
+    font-size: 30px; 
+    padding: 10px 0;
+  }
+  .status-boxes {
+    margin: 30px;
+    padding: 20px;
+  }
 }
 
 /* animal container */
