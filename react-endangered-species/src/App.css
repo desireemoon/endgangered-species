@@ -36,6 +36,9 @@ p {
   font-size: 17px;
   line-height: 21px;
   letter-spacing: .4px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 /* makes header sticky */
@@ -195,8 +198,22 @@ nav {
 
 /* animal container */
 
+.animal-info-container {
+  padding: 10px 0 20px 0;
+}
+
+.animal-img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .animal-img {
+  padding: 20px 0;
   max-width: 340px;
+}
+
+.info-sections {
+  padding: 20px 0;
 }
 
 /* Color Theme Swatches in RGBA */
