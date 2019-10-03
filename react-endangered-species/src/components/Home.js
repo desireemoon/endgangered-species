@@ -4,8 +4,10 @@ import React from 'react';
 const Home = (props) => {
     return (
       <div>
-          <p>Welcome to the endangered species page!</p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <h3>Welcome to the endangered species website!</h3>
+          <p>This site was created in order to bring awareness to these animals and give them a voice. Explore the animal list or click the random animal button learn about the animals featured on this site! We hope your exploration will foster a want to act. We believe that even the smallest positive action can have great positive consequences.</p>
+          <p>“Humanity's true moral test, its fundamental test…consists of its attitude towards those who are at its mercy: animals.”
+            ― Milan Kundera</p>
       </div>
     );
   }

@@ -8,7 +8,10 @@ const Header = (props) => {
       <h1>Endangered Species List</h1>
       <nav>
         <Link className="link" to="/animals">
-          <button className="link-button">Animal List</button>
+          <button className="link-button"
+            onClick={() => {
+              window.scrollTo(0, 0)
+          }} >Animal List</button>
         </Link>
         <Link className="link"
           onClick={() => {
@@ -19,7 +22,10 @@ const Header = (props) => {
           <button className="link-button">Random Animal</button>
         </Link>
         <Link className="link" to="/status">
-          <button className="link-button">Status FAQ</button>
+          <button className="link-button"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }} >Status FAQ</button>
         </Link>
 
       </nav>
