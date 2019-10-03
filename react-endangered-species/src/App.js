@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
 import Footer from './components/Footer'
@@ -15,13 +15,13 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelopeSquare)
 
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = ({
-        animals: [],
-        animal: '',
-        randomAnimal: '',
-        
+      animals: [],
+      animal: '',
+      randomAnimal: '',
+
     })
   }
 
@@ -29,18 +29,13 @@ class App extends Component {
     this.setState({
       animal: animal,
     })
-    console.log("check for animal status", animal.status_legend);
-    
   }
 
-   componentDidMount = async() => {
+  componentDidMount = async () => {
     const animalList = await Axios("http://www.bloowatch.org/developers/json/species/")
-    console.log("animal list:", animalList);
     this.setState({
-        animals: animalList.data.allSpecies
+      animals: animalList.data.allSpecies
     })
- 
-    console.log("did it go to state:", this.state.animals);
     this.getRandomAnimal()
   }
 
@@ -49,32 +44,29 @@ class App extends Component {
   }
 
   getRandomAnimal = () => {
-  const randomAnimal = this.state.animals[this.getRandomNum()]
-  this.setState({ 
-    randomAnimal: randomAnimal
-  })
-    
-    console.log("show random state pls:", this.state.randomAnimal);
-    
+    const randomAnimal = this.state.animals[this.getRandomNum()]
+    this.setState({
+      randomAnimal: randomAnimal
+    })
   }
 
   render() {
     return (
       <div className="App">
         <div className="header-container">
-          <Header handleRandomClick={this.getRandomAnimal}/>
-        </div>  
-        <div className="main-container">           
-          <Main animals={this.state.animals} 
-                animal={this.state.animal} 
-                handleClick={this.grabAnimal}
-                randomAnimal={this.state.randomAnimal}
-                handleRandomClick={this.getRandomAnimal}
-                
-            />
-        </div> 
+          <Header handleRandomClick={this.getRandomAnimal} />
+        </div>
+        <div className="main-container">
+          <Main animals={this.state.animals}
+            animal={this.state.animal}
+            handleClick={this.grabAnimal}
+            randomAnimal={this.state.randomAnimal}
+            handleRandomClick={this.getRandomAnimal}
+
+          />
+        </div>
         <div className="footer-container">
-           <Footer />
+          <Footer />
         </div>
       </div>
     );

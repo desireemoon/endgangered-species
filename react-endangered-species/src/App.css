@@ -59,13 +59,16 @@ p {
   padding: 10px 0;
   background: rgba(128, 142, 86, 1);
   flex: 0 150px;
+}
 
+.home-link {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .link-button {

@@ -9,7 +9,7 @@ const ArticleContainer = (props) => {
             <div className="animal-info-container">
                 <h2>{props.animal && props.animal.name}</h2>
                 <div className="animal-img-container" >
-                    <img className="animal-img"src={`http://www.bloowatch.org/${props.animal && props.animal.image.url}`} alt={props.animal && props.animal.name} />
+                    <img className="animal-img" src={`http://www.bloowatch.org/${props.animal && props.animal.image.url}`} alt={props.animal && props.animal.name} />
                 </div>
                 <div className="info-sections">
                     <h3>Scientific Name: {props.animal && props.animal.scientific_name}</h3>
@@ -20,11 +20,11 @@ const ArticleContainer = (props) => {
                     <p>Location: {props.animal && props.animal.location}</p>
                     <p>Habitat: {props.animal && props.animal.habitat}</p>
                 </div>
-                <div className="info-sections"> 
+                <div className="info-sections">
                     <h3>What's the {props.animal && props.animal.name}'s endangered status?</h3>
                     <p>Status: {props.animal && props.animal.status}</p>
                     <p>There are only around {props.animal && props.animal.population} left in the wild.</p>
-                    </div>
+                </div>
             </div>
             <div className="status-section">
                 <h2>What Does The Status Really Mean?</h2>
