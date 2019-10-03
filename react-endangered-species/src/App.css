@@ -7,13 +7,18 @@
 main{
   background: rgba(242, 216, 188, 1);
   padding: 15px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 68vh;
 }
-
 
 .App {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Global CSS */
@@ -53,6 +58,7 @@ p {
 .header {
   padding: 10px 0;
   background: rgba(128, 142, 86, 1);
+  flex: 0 150px;
 
 }
 
@@ -85,6 +91,7 @@ nav {
 .footer {
   background: rgba(191, 175, 124, 1);
   padding: 10px 0;
+  flex: 0 150px;
 }
 
 .social-links {
