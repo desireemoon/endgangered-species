@@ -176,10 +176,16 @@ nav {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .home-header {
     padding: 10px;
   }
+
+  .home-container{
+    margin: 0;
+    padding: 0;
+  }
+
 
   main {
     min-height: 50vh;
