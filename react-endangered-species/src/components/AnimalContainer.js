@@ -1,8 +1,6 @@
 import React from 'react';
 
 const ArticleContainer = (props) => {
-    //make class component and add componentdidmount and pass random function as a prop that componentdidmpoint will call
-
     return (
 
         <div className="">
@@ -45,7 +43,6 @@ const ArticleContainer = (props) => {
                 </div>
             </div>
         </div>
-
     )
 }
 

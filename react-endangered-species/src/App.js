@@ -25,12 +25,14 @@ class App extends Component {
     })
   }
 
+  // grabs single animal for animal container
   grabAnimal = (animal) => {
     this.setState({
       animal: animal,
     })
   }
 
+  // grab data
   componentDidMount = async () => {
     const animalList = await Axios("http://www.bloowatch.org/developers/json/species/")
     this.setState({
@@ -43,6 +45,7 @@ class App extends Component {
     return Math.floor(Math.random() * (12));
   }
 
+  // random animal function
   getRandomAnimal = () => {
     const randomAnimal = this.state.animals[this.getRandomNum()]
     this.setState({
