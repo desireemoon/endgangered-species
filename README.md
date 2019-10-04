@@ -11,8 +11,8 @@ endangered-species
 |Sep 30th| Project Approval - Pseudocode and start Structure | Complete
 |Oct 1st| Finish structure  and start Logic  | Complete
 |Oct 2nd| Finish logic and start CSS | Complete
-|Oct 3rd| CSS and any post MVP work | Incomplete
-|Oct 4th| Presentation Day - project finished  | Incomplete
+|Oct 3rd| CSS and any post MVP work | Complete
+|Oct 4th| Presentation Day - project finished  | Complete
 
 ## Project Description
 
@@ -110,14 +110,14 @@ https://wireframe.cc/0fQuPj
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Design | H | 3hrs| 2hrs | :---: |
-| Pseudocode | H | 3hrs| :---: | :---: |
-| HTML structure | H | 6hrs| 5hrs | :---: |
-| Get API keys and grab data | H | 3hr| 5hrs | :---: |
-| implement api logic | M | 3hrs| 3hrs | :---: |
-| implement jsx functionality | M | 6hrs| 3hrs | :---: |
-| CSS styling | M | 10hrs| 3hr | :---: |
-| Total | H | 34hrs| :---: | :---: |
+| Project Design | H | 3hrs| 3hrs | 3hrs |
+| Pseudocode | H | 3hrs| 2hrs | 2hrs |
+| HTML structure | H | 6hrs| 5hrs | 5hrs |
+| Get API keys and grab data | H | 3hr| 5hrs | 5hrs |
+| implement api logic | M | 3hrs| 3hrs | 3hrs |
+| implement jsx functionality | M | 6hrs| 5hrs | 5hrs |
+| CSS styling | M | 10hrs| 10hrs | 10hrs |
+| Total | H | 34hrs| 33hrs | 33hrs |
 
 ## Additional Libraries
 - react-router
