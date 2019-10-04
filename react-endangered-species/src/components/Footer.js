@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div class="social-title">
-                <h2>Connect with the programmer:</h2>
+                <h2 className="footer-h2">Connect with the programmer:</h2>
             </div>
             <div class="social-links">
                 <div class="social"><a href="https://www.linkedin.com/in/desiree-dewysocki"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" className="font-icon"/></a></div>

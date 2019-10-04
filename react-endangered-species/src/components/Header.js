@@ -8,7 +8,7 @@ const Header = (props) => {
       <Link className="home-link" to="/" onClick={() => {
         window.scrollTo(0, 0)
       }}>
-        <h1>Endangered Species List</h1>
+        <h1>Endangered Species Explorer</h1>
       </Link>
       <nav>
         <Link className="link" to="/animals">
