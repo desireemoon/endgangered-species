@@ -140,6 +140,6 @@ https://wireframe.cc/0fQuPj
 ```
 
 ## Issues and Resolutions
-**ERROR**: Had issues choosing and idea that would work with an API 
-**RESOLUTION**: Made it api focused instead of idea focused
+- **ERROR**: Had issues choosing and idea that would work with an API 
+- **RESOLUTION**: Made it api focused instead of idea focused
 
